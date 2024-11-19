@@ -27,11 +27,32 @@ import Cards from "../components/Cards.astro";
     <div class="vores_mission">
       <img src="./billeder/voresmission.webp" alt="" />
     </div>
-    <div class="ai_figur">
-      <img src="./billeder/tryllekunstnerbaggrund.png" alt="" />
-    </div>
-    <div class="ai_figur"></div>
 
+    <div class="aifigur_tekst">
+      <div class="ai_figur">
+        <img src="./billeder/tryllekunstnerbaggrund.png" alt="" />
+      </div>
+
+      <div class="tekst">
+        <p>Tryllekunstnere kan skabe lys og glæde i svære stunder, og netop det er formålet med en velgørenhedsfond dedikeret til at bringe magi ind på hospitaler. Idéen bag fonden er at sende tryllekunstnere ud til børneafdelinger, hvor de med mae omstændigheder. Det er en kærlig støtte, som bringer lidt ekstra hverdagsmagi til børn i nød.</p>
+      </div>
+    </div>
+    <div class="små_glimt">
+      <img src="./billeder/smaaglimt.webp" alt="" />
+    </div>
+    <div class="hat_stav_tekst">
+      <div class="tekst">
+        <p>Tryllekunstnere kan skabe lys og glæde i svære stunder, og netop det er formålet med en velgørenhedsfond dedikeret til at bringe magi ind på hospitaler. Idéen bag fonden er at sende tryllekunstnere ud til børneafdelinger, hvor de med mae omstændigheder. Det er en kærlig støtte, som bringer lidt ekstra hverdagsmagi til børn i nød.</p>
+      </div>
+      <div class="hat_stav">
+        <div class="hat">
+          <img src="./billeder/hat.webp" alt="" />
+        </div>
+        <div class="stav">
+          <img src="./billeder/tryllestav.webp" alt="" />
+        </div>
+      </div>
+    </div>
     <Cards />
     <div class="afsnit3">
       <div class="besked besked1">
@@ -49,9 +70,10 @@ import Cards from "../components/Cards.astro";
     padding: 2rem;
     margin: 2.2rem;
     border-radius: 40px;
+    margin-left: 4.6rem;
   }
   .overskrift_blaa {
-    width: 60%;
+    width: 80%;
     padding: 2.5rem;
     margin-bottom: -3rem;
   }
@@ -72,16 +94,16 @@ import Cards from "../components/Cards.astro";
   }
   .afsnit_2header {
     margin-top: 13rem;
-    width: 70%;
-    margin-left: 6rem;
+    width: 50%;
+    margin-left: 11rem;
   }
   .vores_mission {
     width: 40%;
-    margin-left: 9rem;
+    margin-left: 13rem;
   }
   .ai_figur {
     width: 50%;
-    margin-left: 9rem;
+    margin-left: 11rem;
     margin-block: 5rem;
   }
   .afsnit3 {
@@ -100,5 +122,81 @@ import Cards from "../components/Cards.astro";
   .besked {
     margin-block: 1rem;
     width: 50%;
+  }
+  .tekst {
+    max-width: 65ch;
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .små_glimt {
+    width: 50%;
+    margin-left: 11rem;
+    margin-block: 4rem;
+  }
+  .hat_stav {
+    display: flex;
+    width: 40%;
+    gap: 5rem;
+    margin-left: 12rem;
+    align-content: center;
+    justify-content: space-around;
+    margin-block: 4rem;
+  }
+  .stav {
+    rotate: -60deg;
+  }
+  .hat {
+    rotate: 200deg;
+  }
+  @media screen and (min-width: 800px) {
+    video {
+      border-radius: 50px;
+      width: 85%;
+      margin-left: 8rem;
+    }
+    .afsnit_2header {
+      margin-top: 60rem;
+      width: 40%;
+      margin-left: 30rem;
+    }
+    .vores_mission {
+      width: 30%;
+      margin-left: 33rem;
+    }
+    .aifigur_tekst {
+      display: flex;
+      gap: 12rem;
+      margin-block: 3rem;
+    }
+    .ai_figur {
+      width: 40%;
+      margin-left: 2rem;
+    }
+    .små_glimt {
+      width: 40%;
+      margin-left: 33rem;
+      margin-block: 14rem;
+    }
+    .hat_stav {
+      display: flex;
+      width: 22%;
+      gap: 5rem;
+      margin-right: 12rem;
+      align-content: center;
+      justify-content: space-around;
+      margin-block: 4rem;
+    }
+    .stav {
+      rotate: -60deg;
+      width: 22%;
+    }
+    .hat {
+      rotate: 220deg;
+    }
+    .hat_stav_tekst {
+      display: flex;
+      gap: 2rem;
+    }
   }
 </style>
