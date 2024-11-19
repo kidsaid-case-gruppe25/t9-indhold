@@ -4,6 +4,27 @@ import Cards from "../components/Cards.astro";
 ---
 
 <MainLayout>
-  <main></main>
+  <main>
+    <div class="overskrift_blaa">
+      <img src="../../billeder/LOGO_blaa.svg" alt="" />
+    </div>
+
+    <video width="500" height="auto" controls>
+      <source src="../../billeder/Hospis_film.mp4" type="video/mp4" />
+    </video>
+  </main>
   <Cards />
 </MainLayout>
+
+<style>
+  video {
+    padding: 2rem;
+    margin: 2.2rem;
+    border-radius: 40px;
+  }
+  .overskrift_blaa {
+    width: 60%;
+    padding: 2.5rem;
+    margin-bottom: -3rem;
+  }
+</style>
