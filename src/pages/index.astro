@@ -5,14 +5,35 @@ import Cards from "../components/Cards.astro";
 
 <MainLayout>
   <main>
+    <section class="blaa">
+      <div class="grid_1-1">
+        <div class="overskrift_blaa">
+          <img src="../../billeder/LOGO_blaa.svg" alt="videoer" />
+        </div>
+        <div class="ballon_header">
+          <img src="../../billeder/balloner.webp" alt="balloner" />
+        </div>
+      </div>
+      <div class="videokasse">
+        <video width="500" height="auto" controls>
+          <source src="../../billeder/Hospis_film.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <div class="afsnit_2header">
+      <img src="../../billeder/LOGO.svg" alt="" />
+    </div>
+    <div class="vores_mission">
+      <img src="../../billeder/voresmission.webp" alt="" />
+    </div>
+    <div class="ai_figur"></div>
+
     <Cards />
   </main>
 </MainLayout>
 
 <style>
-  main {
-    background-color: #d9edff;
-  }
   video {
     padding: 2rem;
     margin: 2.2rem;
@@ -33,6 +54,18 @@ import Cards from "../components/Cards.astro";
   }
   .blaa {
     background-color: #d9edff;
-    height: 450px;
+    height: 370px;
+  }
+  .gul {
+    background-color: #fffef4;
+  }
+  .afsnit_2header {
+    margin-top: 13rem;
+    width: 70%;
+    margin-left: 6rem;
+  }
+  .vores_mission {
+    width: 40%;
+    margin-left: 9rem;
   }
 </style>
