@@ -1,84 +1,93 @@
 ---
 
 ---
+
 <footer class="footer">
   <div class="footer-content">
-    <h1 class="logo">
-      De Små <span class="eye-icon">👁</span>jeblikke
-    </h1>
+    <div class="logo">
+      <img src="/public/billeder/LOGO_blaa.svg" alt="Logo" />
+    </div>
     <nav class="footer-nav">
       <a href="#ambassadører">Ambassadører</a>
       <a href="#omos">Om os</a>
       <a href="#nyheder">Nyheder</a>
     </nav>
     <div class="social-icons">
-      <a href="#" class="icon">📷</a>
-      <a href="#" class="icon">📘</a>
-      <a href="#" class="icon">🔗</a>
+      <a href="/"> <img src="/public/billeder/instagram_icon.webp" alt="" /></a>
+      <a href="/"> <img src="/public/billeder/Linkedin_icon.webp" alt="" /></a>
+      <a href="/"> <img src="/public/billeder/facebook_icon.webp" alt="" /></a>
     </div>
   </div>
 </footer>
- 
- <style>
 
+<style>
+  body {
+    font-family: "Afacad", sans-serif;
+  }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+  .footer {
+    background-color: #9fd1ff; /* Light blue */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0%;
+  }
 
-.footer {
-  background-color: #add8e6; /* Light blue */
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
+  .logo {
+    width: 30%;
+    margin-left: 4rem;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 120px;
+    text-align: center;
+  }
 
-.logo {
-  font-size: 24px;
-  color: #3975e8; /* Slightly darker blue for contrast */
-  margin: 0;
-}
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
 
-.logo .eye-icon {
-  font-size: 28px;
-}
-
-.footer-nav {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.footer-nav a:hover {
-  text-decoration: underline;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons .icon {
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
-}
-
-.social-icons .icon:hover {
-  opacity: 0.8;
-}
- </style>
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    width: 15%;
+    margin-right: -65rem;
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 800px) {
+    .footer-nav {
+      display: flex;
+      gap: 80px;
+      text-align: center;
+    }
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      width: 25%;
+      margin-right: -25rem;
+      margin-bottom: 5rem;
+    }
+    .logo {
+      width: 35%;
+      margin-left: 2rem;
+    }
+  }
+</style>
