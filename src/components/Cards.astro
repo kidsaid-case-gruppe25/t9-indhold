@@ -1,15 +1,36 @@
 <div class="card">
-  <img class="card-billede" src="public/billeder/barn_1.webp" alt="Billede af barn">
+  <img src="public/billeder/barn_1.webp" alt="barn1">
   <div class="card-body">
-    <h5 class="card-title">Ambassadører</h5>
-    <a href="#" class="btn">Skal være en pil</a>
+    <h4>Ambassadører</h4>
+    <a href="#" class="knap">Knap</a>
   </div>
 </div>
 
 <style>
-    .card {
-        width: 18rem;
-    }
 
-    .btn
+    .card {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+width: 14rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+            border-radius: 10px;
+            background-color: #C1E8D6;
+}
+
+.card-body {
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+margin: auto;
+padding-top: 1rem;
+    width: 12rem;
+    border-radius: 10px;
+}
 </style>
