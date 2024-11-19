@@ -8,28 +8,39 @@ import Cards from "../components/Cards.astro";
     <section class="blaa">
       <div class="grid_1-1">
         <div class="overskrift_blaa">
-          <img src="../../billeder/LOGO_blaa.svg" alt="videoer" />
+          <img src="./billeder/LOGO_blaa.svg" alt="videoer" />
         </div>
         <div class="ballon_header">
-          <img src="../../billeder/balloner.webp" alt="balloner" />
+          <img src="./billeder/balloner.webp" alt="balloner" />
         </div>
       </div>
       <div class="videokasse">
         <video width="500" height="auto" controls>
-          <source src="../../billeder/Hospis_film.mp4" type="video/mp4" />
+          <source src="./billeder/Hospis_film.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
 
     <div class="afsnit_2header">
-      <img src="../../billeder/LOGO.svg" alt="" />
+      <img src="./billeder/LOGO.svg" alt="" />
     </div>
     <div class="vores_mission">
-      <img src="../../billeder/voresmission.webp" alt="" />
+      <img src="./billeder/voresmission.webp" alt="" />
     </div>
-    <div class="ai_figur"></div>
+    <div class="ai_figur">
+      <img src="./billeder/tryllekunstnerbaggrund.png" alt="" />
+    </div>
 
     <Cards />
+
+    <div class="afsnit3">
+      <div class="besked besked1">
+        <img src="./billeder/frame_1.webp" alt="" />
+      </div>
+      <div class="besked besked2">
+        <img src="./billeder/frame_2.webp" alt="" />
+      </div>
+    </div>
   </main>
 </MainLayout>
 
@@ -67,5 +78,27 @@ import Cards from "../components/Cards.astro";
   .vores_mission {
     width: 40%;
     margin-left: 9rem;
+  }
+  .ai_figur {
+    width: 50%;
+    margin-left: 9rem;
+    margin-block: 5rem;
+  }
+  .afsnit3 {
+    background-image: url(billeder/ballonogbamse.webp);
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1440/2738;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 1rem;
+  }
+
+  .besked {
+    margin-block: 1rem;
+    width: 50%;
   }
 </style>
