@@ -2,7 +2,9 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Knap from "../components/Knap.astro";
 ---
-
+            <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
 <MainLayout>
   <main>
         <Knap></Knap>
@@ -30,7 +32,7 @@ import Knap from "../components/Knap.astro";
 
     <div class="aifigur_tekst">
       <div class="ai_figur">
-        <img src="./billeder/tryllekunstnerbaggrund.png" alt="" />
+        <img class="tryllekunstner" src="./billeder/tryllekunstnerbaggrund.png" alt="" />
       </div>
 
       <div class="tekst">
@@ -416,6 +418,30 @@ width: 14rem;
   .container3 {
 margin: 4rem auto;
 width: 14rem;
+}
+.tryllekunstner, .hat_stav, .besked {
+animation: fade-in linear forwards;
+animation-timeline: view(1px);
+animation-range-start: cover;
+animation-range-end: 700px;
+}
+
+@keyframes fade-in {
+  from {scale: 0.4}
+  to {scale: 1}
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  position: fixed;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #42a3ff;
+  width: 0%;
 }
   }
 </style>
