@@ -1,10 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Cards from "../components/Cards.astro";
+import Knap from "../components/Knap.astro";
 ---
 
 <MainLayout>
   <main>
+        <Knap></Knap>
     <section class="blaa">
       <div class="grid_1-1">
         <div class="overskrift_blaa">
@@ -20,7 +21,6 @@ import Cards from "../components/Cards.astro";
         </video>
       </div>
     </section>
-
     <div class="afsnit_2header">
       <img src="./billeder/LOGO.svg" alt="" />
     </div>
@@ -53,7 +53,68 @@ import Cards from "../components/Cards.astro";
         </div>
       </div>
     </div>
-    <Cards />
+<div class="grid1-1-1">
+  <div class="container1">
+      <div class="card">
+        <img src="./billeder/barn_1.webp" alt="barn1">
+        <div class="card-body">
+          <h4>Ambassadører</h4>
+          <a href="#" class="knap"><img src="./billeder/pilknap.png" alt=""></a>
+        </div>
+      </div>
+  </div>
+  
+  <div class="container2">
+      <div class="card2">
+        <img src="./billeder/barn_2.webp" alt="barn1">
+        <div class="card-body">
+          <h4>Ambassadører</h4>
+          <a href="#" class="knap"><img src="./billeder/pilknap.png" alt=""></a>
+        </div>
+      </div>
+  </div>
+  
+  <div class="container3">
+      <div class="card3">
+        <img src="./billeder/barn_3.webp" alt="barn1">
+        <div class="card-body">
+          <h4>Ambassadører</h4>
+          <a href="#" class="knap"><img src="./billeder/pilknap.png" alt=""></a>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="grid1-1-1">
+  <div class="container1">
+      <div class="card">
+        <img src="./billeder/barn_1.webp" alt="barn1">
+        <div class="card-body">
+          <h4>Ambassadører</h4>
+          <a href="#" class="knap"><img src="./billeder/pilknap.png" alt=""></a>
+        </div>
+      </div>
+  </div>
+  
+  <div class="container2">
+      <div class="card2">
+        <img src="./billeder/barn_2.webp" alt="barn1">
+        <div class="card-body">
+          <h4>Ambassadører</h4>
+          <a href="#" class="knap"><img src="./billeder/pilknap.png" alt=""></a>
+        </div>
+      </div>
+  </div>
+  
+  <div class="container3">
+      <div class="card3">
+        <img src="./billeder/barn_3.webp" alt="barn1">
+        <div class="card-body">
+          <h4>Ambassadører</h4>
+          <a href="#" class="knap"><img src="./billeder/pilknap.png" alt=""></a>
+        </div>
+      </div>
+  </div>
+</div>
     <div class="afsnit3">
       <div class="uventet">
         <img src="./billeder/nogetsaerligt.webp" alt="" />
@@ -155,6 +216,61 @@ import Cards from "../components/Cards.astro";
     width: 50%;
     margin-block: 2rem;
   }
+
+  .container1 {
+margin: 2rem auto;
+width: 14rem;
+}
+
+  .container2 {
+margin: 2rem auto;
+width: 14rem;
+}
+
+  .container3 {
+margin: 2rem auto;
+width: 14rem;
+}
+
+.card {
+padding: 15px;
+border-radius: 10px;
+background-color: #C1E8D6;
+}
+
+.card2 {
+padding: 15px;
+border-radius: 10px;
+background-color: #9FD1FF;
+}
+.card3 {
+padding: 15px;
+border-radius: 10px;
+background-color: #EA9898;
+}
+
+.card-body {
+    display: flex;
+flex-direction: column;
+    padding: 1rem 0;
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.knap img {
+    padding-top: 0.5rem;
+    width: 20%;
+    border-radius: 0;
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
   @media screen and (min-width: 800px) {
     video {
       border-radius: 50px;
@@ -175,6 +291,13 @@ import Cards from "../components/Cards.astro";
       gap: 12rem;
       margin-block: 3rem;
     }
+
+      .tekst {
+    max-width: 65ch;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
     .ai_figur {
       width: 40%;
       margin-left: 2rem;
@@ -204,6 +327,7 @@ import Cards from "../components/Cards.astro";
       display: flex;
       gap: 8rem;
     }
+
     .afsnit3 {
       background-image: url(billeder/ballonogbamse.webp);
       background-position: center;
@@ -233,5 +357,29 @@ import Cards from "../components/Cards.astro";
       margin-top: -5rem;
       margin-left: 22rem;
     }
+.grid1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 30rem;
+}
+
+.card-body {
+    font-size: 1.2rem;
+}
+
+  .container1 {
+margin: 0 auto;
+width: 14rem;
+}
+
+  .container2 {
+margin: 2rem auto;
+width: 14rem;
+}
+
+  .container3 {
+margin: 4rem auto;
+width: 14rem;
+}
   }
 </style>
