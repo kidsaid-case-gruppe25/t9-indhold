@@ -34,7 +34,9 @@ import Knap from "../components/Knap.astro";
       </div>
 
       <div class="tekst">
+        <img class="quotation1" src="./billeder/quotation.webp" alt="">
         <p>Tryllekunstnere kan skabe lys og glæde i svære stunder, og netop det er formålet med en velgørenhedsfond dedikeret til at bringe magi ind på hospitaler. Idéen bag fonden er at sende tryllekunstnere ud til børneafdelinger, hvor de med mae omstændigheder. Det er en kærlig støtte, som bringer lidt ekstra hverdagsmagi til børn i nød.</p>
+        <img class="quotation2" src="./billeder/quotation.webp" alt="">
       </div>
     </div>
     <div class="små_glimt">
@@ -42,7 +44,9 @@ import Knap from "../components/Knap.astro";
     </div>
     <div class="hat_stav_tekst">
       <div class="tekst">
+                <img class="quotation1" src="./billeder/quotation.webp" alt="">
         <p>Tryllekunstnere kan skabe lys og glæde i svære stunder, og netop det er formålet med en velgørenhedsfond dedikeret til at bringe magi ind på hospitaler. Idéen bag fonden er at sende tryllekunstnere ud til børneafdelinger, hvor de med mae omstændigheder. Det er en kærlig støtte, som bringer lidt ekstra hverdagsmagi til børn i nød.</p>
+                <img class="quotation2" src="./billeder/quotation.webp" alt="">
       </div>
       <div class="hat_stav">
         <div class="hat">
@@ -186,6 +190,17 @@ import Knap from "../components/Knap.astro";
     margin-block: 1rem;
     width: 50%;
   }
+
+  .quotation1 {
+    width: 10%;
+    margin-left:-2rem;
+  }
+    .quotation2 {
+      width: 10%;
+      margin-left: 5rem;
+      rotate: 180deg;
+    }
+
   .tekst {
     max-width: 65ch;
     margin: auto;
@@ -265,11 +280,6 @@ img {
     width: 20%;
     border-radius: 0;
 }
-img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
 
   @media screen and (min-width: 800px) {
     video {
@@ -296,7 +306,7 @@ img {
     max-width: 65ch;
     margin: auto;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
     .ai_figur {
       width: 40%;
@@ -361,12 +371,38 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 30rem;
+  gap: 20px;
 }
 
 .card-body {
     font-size: 1.2rem;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
   .container1 {
 margin: 0 auto;
 width: 14rem;
